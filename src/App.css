@@ -33,7 +33,7 @@ a {
 .question-title {
   font-family: 'Merriweather', serif;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 65px;
   text-align: center;
   font-size: 35px;
   font-weight: bold;
@@ -55,7 +55,8 @@ a {
 }
 
 .answer-button {
-  border: 1px solid black;
+  border: 1px solid #D3D3D3
+;
   padding: 0;
   background: white;
   margin-bottom: 10px;
@@ -65,9 +66,9 @@ a {
 }
 
 .answer-button-clicked {
-  border: 1px solid black;
+  border: 1px solid #D3D3D3;
   padding: 0;
-  background: black;
+  background: #D3D3D3;
   color: white;
   margin-bottom: 10px;
   height: 100px;

@@ -19,7 +19,6 @@ function Result(props) {
         <div className='row'>
             <div className='col-xs-12'>
                 <h2 className='title'> Our pick for you is </h2>
-                <hr />
             </div>
             <div className='col-xs-12 col-md-6'>
                 <div className='img-container'>
