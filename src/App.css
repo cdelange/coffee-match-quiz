@@ -154,6 +154,7 @@ hr {
 @media (max-width: 1000px) {
   .winner-img { max-height: 345px;}
   .img-container { min-height: 345px;}
+  .question-title { margin-bottom: 20px; }
 }
 
 .loader {
