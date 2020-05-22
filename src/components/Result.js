@@ -4,11 +4,6 @@ import React, { useEffect } from 'react';
 
 function Result(props) {
 
-    // const loader = document.querySelector('.loader');
-
-    // const showLoader = () => loader.classList.remove('loader--hide');
-
-
 
     function refreshPage() {
         window.location.reload(false);

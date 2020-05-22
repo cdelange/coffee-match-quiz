@@ -1,6 +1,7 @@
 import React from 'react';
 import Questions from './components/Questions';
 import Result from './components/Result';
+import Loader from './components/Loader';
 
 
 import './App.css';
@@ -31,7 +32,7 @@ class App extends React.Component {
           "Bold",
           "Peanut Butter"
         ],
-        isMulti: true,
+        isMulti: false,
         url: "https://cdn.shopify.com/s/files/1/0939/8326/products/learning_roaster_4f168e5c-3734-40ab-9824-1c5356becb18_600x.jpg?v=1557608537"
       },
       {
@@ -43,7 +44,7 @@ class App extends React.Component {
           "Flavored Creamer or Syrups",
           "Iced"
         ],
-        isMulti: true,
+        isMulti: false,
         url: "https://cdn.shopify.com/s/files/1/0939/8326/products/learning_roaster_4f168e5c-3734-40ab-9824-1c5356becb18_600x.jpg?v=1557608537"
       },
       {
@@ -63,8 +64,18 @@ class App extends React.Component {
     currentAnswers: [],
     quizCompleted: false,
     multiCompleted: false,
+    loadingResult: true,
     winner: ""
-  }
+  };
+
+  sleep = (milliseconds) => {
+    return new Promise(resolve => setTimeout(resolve, milliseconds));
+  };
+
+  wait = async (milliseconds = 2000) => {
+    await this.sleep(milliseconds);
+    this.setState({loadingResult: false});
+  };
 
   //increments counter to change to next question
   nextQuestion = () => {
@@ -74,7 +85,7 @@ class App extends React.Component {
         this.setState({count: this.state.count + 1
   });
         this.resetForNextQuestion();
-  }}
+  }};
 
 
 
@@ -89,7 +100,7 @@ class App extends React.Component {
     } else {
       this.setState({multiCompleted: false})
     }
-  }
+  };
 
 
   // stores answer in 'customerAnswers' in app state array
@@ -132,7 +143,7 @@ class App extends React.Component {
 
   pickCoffee = (arr) => {
     return arr[Math.floor(Math.random() * arr.length)];
-  }
+  };
 
 
   // either sends array to an API for processing, or processes the array itself.
@@ -183,25 +194,26 @@ class App extends React.Component {
       for (let j = 0; j < coffees.length; j++) {
         coffeeDict[coffees[j]]++;
     }};
-    // console.log(coffeeDict);
-    // console.log(this.getMaxArray(coffeeDict));
-    // console.log(this.pickCoffee(this.getMaxArray(coffeeDict)));
+
     this.setState({winner: this.pickCoffee(this.getMaxArray(coffeeDict))});
     this.showResults();
-  }
+  };
 
   showResults = () => {
     let quizCompleted = !this.state.quizCompleted;
     this.setState({quizCompleted})
-  }
-
+  };
 
   render() {
     let page;
-    if (this.state.quizCompleted) {
-     page = <Result winner={this.state.winner}  />
+    if (this.state.loadingResult && this.state.quizCompleted) {
+      page = <Loader />;
+      this.wait(2500);
+
+    } else if (this.state.quizCompleted) {
+      page = <Result winner={this.state.winner}  />;
     } else {
-      page = <Questions questions={this.state.questions} count={this.state.count} submitAnswer={this.submitAnswer} nextQuestion={this.nextQuestion} multiCompleted={this.state.multiCompleted} />
+      page = <Questions questions={this.state.questions} count={this.state.count} submitAnswer={this.submitAnswer} nextQuestion={this.nextQuestion} multiCompleted={this.state.multiCompleted} />;
     }
 
     return (
@@ -209,7 +221,7 @@ class App extends React.Component {
         {page}
       </div>
     )
-  }
+  };
 }
 
 
