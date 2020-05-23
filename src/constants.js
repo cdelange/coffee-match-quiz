@@ -1,12 +1,12 @@
 export const QUESTIONS = [
       {
             id: 0,
-            isMulti: true,
-            title: "What is your preferred roast level? (Select all that apply)",
+            isMulti: false,
+            title: "What is your preferred roast level?",
             answers: {
-                        'Light': ['A.M. Rescue', 'Life Saver', 'Take Me Home', 'Fresh Perspective', 'Spark', 'Santa Gema', 'Regalo', 'Agua Colorada', 'Suke Quto'],
-                        'Medium': ['Pick-Me-Up', 'Kickstart', 'Life Saver', 'Fresh Perspective', 'Good Vibes', 'Spark', 'Connection', 'Santa Gema', 'Regalo', 'Agua Colorada'],
-                        'Dark': ['Kickstart', 'Good Vibes', 'Stimulate', 'Rise and Shine'],
+                        'Light roast': ['A.M. Rescue', 'Life Saver', 'Take Me Home', 'Fresh Perspective', 'Spark', 'Santa Gema', 'Regalo', 'Agua Colorada', 'Suke Quto'],
+                        'Medium roast': ['Pick-Me-Up', 'Kickstart', 'Life Saver', 'Fresh Perspective', 'Good Vibes', 'Spark', 'Connection', 'Santa Gema', 'Regalo', 'Agua Colorada'],
+                        'Dark roast': ['Kickstart', 'Good Vibes', 'Stimulate', 'Rise and Shine'],
                         'Doesn\'t Matter to me!': [],
                   }
 
@@ -15,7 +15,7 @@ export const QUESTIONS = [
       {
             id: 1,
             isMulti: true,
-            title: "Flavor notes are the aromas, textures, and flavors we perceive when we taste coffee. Which of the following appeal to you? (Select all that apply)",
+            title: "Flavor notes are the aromas, textures, and flavors we perceive when we taste coffee. Which of the following appeal to you?",
             answers: {
                         'Chocolate': ['Pick-Me-Up', 'Kickstart', 'Life Saver', 'Fresh Perspective', 'Stimulate', 'Spark', 'Connection', 'Rise and Shine', 'Santa Gema'],
                         'Caramel': ['A.M. Rescue', 'Kickstart', 'Life Saver', 'Take Me Home', 'Connection'],
@@ -29,7 +29,7 @@ export const QUESTIONS = [
                         'Delicate': ['A.M. Rescue', 'Take Me Home', 'Take Me Home', 'Regalo', 'Agua Colorada', 'Suke Quto'],
                         'Tea-like': ['Agua Colorada', 'Suke Quto'],
                         'Roasty': ['Good Vibes', 'Stimulate', 'Rise and Shine'],
-                        'Smoky': ['Stimulate', 'Rise and Shine'],
+                        // 'Smoky': ['Stimulate', 'Rise and Shine'],
                         'Sweet': ['A.M. Rescue', 'Pick-Me-Up', 'Kickstart', 'Life Saver', 'Spark', 'Connection', 'Santa Gema', 'Regalo', 'Agua Colorada'],
                         'Tart': ['Fresh Perspective', 'Santa Gema', 'Regalo', 'Agua Colorada', 'Suke Quto'],
                         'Rich': ['Pick-Me-Up', 'Kickstart', 'Fresh Perspective', 'Good Vibes', 'Stimulate', 'Rise and Shine'],
@@ -40,28 +40,29 @@ export const QUESTIONS = [
 
       {
             id: 2,
-            isMulti: true,
-            title: "How do you brew your coffee? (Select all that apply)",
+            isMulti: false,
+            title: "How do you usually brew your coffee?",
             answers: {
                         'Cold Brew': ['A.M. Rescue', 'Pick-Me-Up', 'Fresh Perspective', 'Stimulate', 'Connection'],
                         'French Press': ['A.M. Rescue', 'Pick-Me-Up', 'Kickstart', 'Fresh Perspective', 'Good Vibes', 'Stimulate', 'Spark', 'Rise and Shine','Santa Gema', 'Agua Colorada'],
                         'Chemex': ['A.M. Rescue', 'Pick-Me-Up', 'Life Saver', 'Take Me Home', 'Fresh Perspective', 'Spark', 'Santa Gema', 'Regalo', 'Agua Colorada', 'Suke Quto'],
                         'Drip': ['A.M. Rescue', 'Pick-Me-Up', 'Kickstart', 'Life Saver', 'Take Me Home', 'Fresh Perspective', 'Good Vibes', 'Stimulate', 'Spark', 'Connection', 'Rise and Shine', 'Santa Gema', 'Regalo', 'Agua Colorada'],
-                        'Pourover': ['A.M. Rescue', 'Pick-Me-Up', 'Life Saver', 'Take Me Home', 'Fresh Perspective', 'Spark', 'Santa Gema', 'Regalo', 'Agua Colorada', 'Suke Quto'],
+                        'Pour Over': ['A.M. Rescue', 'Pick-Me-Up', 'Life Saver', 'Take Me Home', 'Fresh Perspective', 'Spark', 'Santa Gema', 'Regalo', 'Agua Colorada', 'Suke Quto'],
                         'Espresso': ['Pick-Me-Up', 'Kickstart', 'Fresh Perspective', 'Good Vibes', 'Stimulate', 'Regalo'],
-                        'Aeropress': ['A.M. Rescue', 'Pick-Me-Up', 'Kickstart', 'Life Saver', 'Take Me Home', 'Fresh Perspective', 'Good Vibes', 'Stimulate', 'Spark', 'Connection', 'Rise and Shine', 'Santa Gema', 'Regalo', 'Agua Colorada', 'Suke Quto']
+                        'Aeropress': ['A.M. Rescue', 'Pick-Me-Up', 'Kickstart', 'Life Saver', 'Take Me Home', 'Fresh Perspective', 'Good Vibes', 'Stimulate', 'Spark', 'Connection', 'Rise and Shine', 'Santa Gema', 'Regalo', 'Agua Colorada', 'Suke Quto'],
+                        'Moka Pot': []
                   }
 
       },
 
       {
             id: 3,
-            isMulti: true,
-            title: "Do you take milk (dairy or non-dairy) in your coffee?",
+            isMulti: false,
+            title: "Do you usually add milk or cream to your coffee?",
             answers: {
                         'Yes': ['A.M. Rescue', 'Pick-Me-Up', 'Kickstart', 'Life Saver', 'Good Vibes', 'Stimulate', 'Spark', 'Connection', 'Rise and Shine', 'Santa Gema'],
-                        'No': ['A.M. Rescue', 'Pick-Me-Up', 'Kickstart', 'Life Saver', 'Take Me Home', 'Fresh Perspective', 'Spark', 'Connection', 'Santa Gema', 'Regalo', 'Agua Colorada', 'Suke Quto'],
-                        'Sometimes': []
+                        'No': ['A.M. Rescue', 'Pick-Me-Up', 'Kickstart', 'Life Saver', 'Take Me Home', 'Fresh Perspective', 'Spark', 'Connection', 'Santa Gema', 'Regalo', 'Agua Colorada', 'Suke Quto']
+                        // 'Sometimes': []
                   }
 
       },
@@ -69,22 +70,22 @@ export const QUESTIONS = [
       {
             id: 4,
             isMulti: true,
-            title: "Do you add anything else to your coffee? (Select all that apply)",
+            title: "Do you add anything else to your coffee?",
             answers: {
-                        'Sugar': ['A.M. Rescue', 'Pick-Me-Up', 'Kickstart', 'Life Saver',  'Good Vibes', 'Stimulate', 'Spark', 'Connection', 'Rise and Shine'],
+                        'Sugar or Honey': ['A.M. Rescue', 'Pick-Me-Up', 'Kickstart', 'Life Saver',  'Good Vibes', 'Stimulate', 'Spark', 'Connection', 'Rise and Shine'],
                         'Sugar Substitute (Stevia, Splenda, etc.)': ['A.M. Rescue', 'Pick-Me-Up', 'Kickstart', 'Life Saver', 'Good Vibes', 'Stimulate', 'Spark', 'Connection', 'Rise and Shine'],
                         'Spices': ['A.M. Rescue', 'Pick-Me-Up', 'Kickstart', 'Life Saver', 'Good Vibes', 'Stimulate', 'Spark', 'Connection', 'Rise and Shine'],
-                        'Butter/Oil': ['A.M. Rescue', 'Pick-Me-Up', 'Kickstart', 'Life Saver', 'Good Vibes', 'Stimulate', 'Spark', 'Connection', 'Rise and Shine'],
-                        'Honey': ['A.M. Rescue', 'Pick-Me-Up', 'Kickstart', 'Life Saver', 'Take Me Home', 'Good Vibes', 'Stimulate', 'Spark', 'Connection', 'Rise and Shine'],
-                        'Syrups': ['A.M. Rescue', 'Pick-Me-Up', 'Kickstart', 'Life Saver', 'Good Vibes', 'Stimulate', 'Spark', 'Connection', 'Rise and Shine'],
-                        'None of the above': ['A.M. Rescue', 'Pick-Me-Up', 'Kickstart', 'Life Saver', 'Take Me Home', 'Fresh Perspective', 'Good Vibes', 'Stimulate', 'Spark', 'Connection', 'Rise and Shine', 'Santa Gema', 'Regalo', 'Agua Colorada', 'Suke Quto']
+                        'Butter': ['A.M. Rescue', 'Pick-Me-Up', 'Kickstart', 'Life Saver', 'Good Vibes', 'Stimulate', 'Spark', 'Connection', 'Rise and Shine'],
+                        // 'Honey': ['A.M. Rescue', 'Pick-Me-Up', 'Kickstart', 'Life Saver', 'Take Me Home', 'Good Vibes', 'Stimulate', 'Spark', 'Connection', 'Rise and Shine'],
+                        'Flavored Syrups': ['A.M. Rescue', 'Pick-Me-Up', 'Kickstart', 'Life Saver', 'Good Vibes', 'Stimulate', 'Spark', 'Connection', 'Rise and Shine'],
+                        'No, just black': ['A.M. Rescue', 'Pick-Me-Up', 'Kickstart', 'Life Saver', 'Take Me Home', 'Fresh Perspective', 'Good Vibes', 'Stimulate', 'Spark', 'Connection', 'Rise and Shine', 'Santa Gema', 'Regalo', 'Agua Colorada', 'Suke Quto']
                   }
 
       },
 
       {
             id: 5,
-            isMulti: true,
+            isMulti: false,
             title: "Do you have a preference of the following?",
             answers: {
                         'Blend': ['A.M. Rescue', 'Pick-Me-Up', 'Kickstart', 'Stimulate', 'Rise and Shine'],
@@ -97,7 +98,7 @@ export const QUESTIONS = [
 
       {
             id: 6,
-            isMulti: true,
+            isMulti: false,
             title: "Do you have a specific charity you’d like to support?",
             answers: {
                         'Austin Pets Alive!': ['A.M. Rescue', 'Life Saver', 'Take Me Home', 'Agua Colorada', 'Suke Quto'],
@@ -108,3 +109,4 @@ export const QUESTIONS = [
 
       }
 ]
+
