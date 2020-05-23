@@ -66,9 +66,9 @@ a {
 }
 
 .answer-button-clicked {
-  border: 1px solid #D3D3D3;
+  border: 1px solid #F8CD8A;
   padding: 0;
-  background: #D3D3D3;
+  background: #F8CD8A;
   color: white;
   margin-bottom: 10px;
   height: 100px;
@@ -77,9 +77,9 @@ a {
 }
 
 .multi-button {
-  border: 1px solid #D5999B;
+  border: 1px solid #58BCB7;
   padding: 0;
-  background: #D5999B;
+  background: #58BCB7;
   margin-bottom: 10px;
   height: 110px;
   font-family: 'Jost', sans-serif;
@@ -88,9 +88,9 @@ a {
 }
 
 .multi-button:disabled {
-  border: 1px solid #e9c9ca;
+  border: 1px solid #9EDED5;
   padding: 0;
-  background: #e9c9ca;
+  background: #9EDED5;
   margin-bottom: 10px;
   height: 110px;
   font-family: 'Jost', sans-serif;
@@ -101,7 +101,7 @@ a {
 
 .restart-button {
   border: none;
-  background-color: #FFCC8B;
+  background-color: #A0E0D3;
   margin-top: 10px;
   height: 40px;
   font-family: 'Jost', sans-serif;
@@ -110,7 +110,7 @@ a {
 
 .shop-button {
   border: none;
-  background-color: #D5999B;
+  background-color: #F8CD8A;
   margin-top: 10px;
   height: 40px;
   font-family: 'Jost', sans-serif;

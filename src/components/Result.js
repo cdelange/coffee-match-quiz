@@ -22,7 +22,7 @@ function Result(props) {
             </div>
             <div className='col-xs-12 col-md-6'>
                 <div className='img-container'>
-                    <img className='img-responsive winner-img fadeIn' src="https://cdn.shopify.com/s/files/1/0939/8326/products/RiseShine12OZ_Render_800x.png?v=1586188230" alt="Rise and Shine" />
+                    <img className='img-responsive winner-img fadeIn' src="https://cdn.shopify.com/s/files/1/0939/8326/products/GG_Peru_800x.png?v=1588015971" alt="Rise and Shine" />
                 </div>
             </div>
             <div className='col-xs-12 col-md-6 coffee-text'>
@@ -34,7 +34,7 @@ function Result(props) {
                 <li>Dark, earthy flavor</li>
                 <li>Great for a drip machine</li>
                 </ul>
-                <form action="https://greatergoodsroasting.com/collections/all-coffee/products/rise-shine">
+                <form action="https://greatergoodsroasting.com/collections/all-coffee/products/agua-colorada-peru-1">
                     <button className="shop-button btn-block" type="submit"> Shop Now
                     </button>
                 </form>

@@ -15,7 +15,9 @@ export const QUESTIONS = [
       {
             id: 1,
             isMulti: true,
-            title: "Flavor notes are the aromas, textures, and flavors we perceive when we taste coffee. Which of the following appeal to you?",
+            // title: "Flavor notes are the aromas, textures, and flavors we perceive when we taste coffee. Which of the following appeal to you?",
+            title: "Which coffee flavors below appeal to you?",
+
             answers: {
                         'Chocolate': ['Pick-Me-Up', 'Kickstart', 'Life Saver', 'Fresh Perspective', 'Stimulate', 'Spark', 'Connection', 'Rise and Shine', 'Santa Gema'],
                         'Caramel': ['A.M. Rescue', 'Kickstart', 'Life Saver', 'Take Me Home', 'Connection'],
