@@ -29,8 +29,13 @@ function Result(props) {
                 <h2 className='winner-string'> { props.winner } </h2>
                 <h4 id='description'>A full-bodied dark roast Columbian with strong dark chocolate notes.  </h4>
                 <hr />
+                <ul>
+                <li>Pairs well with cream</li>
+                <li>Dark, earthy flavor</li>
+                <li>Great for a drip machine</li>
+                </ul>
                 <form action="https://greatergoodsroasting.com/collections/all-coffee/products/rise-shine">
-                    <button className="shop-button btn-block" type="submit"> Shop Now!
+                    <button className="shop-button btn-block" type="submit"> Shop Now
                     </button>
                 </form>
                 <button className="restart-button btn-block" onClick={refreshPage}> Restart Quiz </button>

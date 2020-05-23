@@ -5,6 +5,7 @@ import Loader from './components/Loader';
 import * as myConstants from './constants.js';
 import './App.css';
 
+// const questions = myConstants.QUESTIONS;
 const questions = myConstants.QUESTIONS;
 
 class App extends React.Component {
@@ -99,10 +100,7 @@ class App extends React.Component {
 
   // either sends array to an API for processing, or processes the array itself.
   getResults = () => {
-    const answers = [...this.state.customerAnswers];
-
-    // mappings of answer choices to coffees
-    const answerDict = myConstants.ANSWERDICT;
+    const customerAnswers = [...this.state.customerAnswers];
 
     let coffeeDict = {
       'Suke Quto': 0,
@@ -119,16 +117,27 @@ class App extends React.Component {
       'Kickstart': 0,
       'Stimulate': 0,
       'Rise and Shine': 0,
-      'Good Vibes': 0,
-      'Low Strung': 0
+      'Good Vibes': 0
     };
 
-    for (let i = 0; i < answers.length; i++) {
-      let coffees = answerDict[answers[i]]
-      for (let j = 0; j < coffees.length; j++) {
-        coffeeDict[coffees[j]]++;
-    }};
-
+    for (let i = 0; i < customerAnswers.length; i++) {
+      let coffees;
+      // console.log('new entry in customerAnswers')
+      for (let j = 0; j < questions.length; j++) {
+        if ((Object.keys(questions[j].answers).includes(customerAnswers[i]))) {
+          coffees = questions[j].answers[customerAnswers[i]];
+          // coffees = Object.keys(questions[j].answers);
+          // console.log(customerAnswers[i]);
+          // console.log(coffees);
+         }
+      }
+      for (let k = 0; k < coffees.length; k++) {
+        coffeeDict[coffees[k]]++;
+        // console.log(coffees[k]);
+        // console.log(coffeeDict[coffees[k]]);
+    }
+  };
+    console.log(coffeeDict);
     this.setState({winner: this.pickCoffee(this.getMaxArray(coffeeDict))});
     this.showResults();
   };

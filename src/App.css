@@ -125,7 +125,7 @@ a {
   margin-right: auto;
   max-height: 550px;
   opacity: 0;
-  transition: 4s opacity;
+  transition: 7s opacity;
   }
 
 .img-container {
@@ -149,7 +149,9 @@ hr {
   border-top: 1px solid #D3D3D3;
 }
 
-
+ul {
+  list-style-position: inside;
+}
 
 @media (max-width: 1000px) {
   .winner-img { max-height: 345px;}
@@ -167,20 +169,23 @@ hr {
 
 }
 
-.loader > div  {
-  animation: loader 0.6s infinite alternate;
-}
 .loader > div > img {
   height: 60px;
   width: 60px;
 }
 
+.loader > div  {
+  animation: loader 0.6s infinite alternate;
+}
+
 .loader > div:nth-child(2) {
   animation-delay: 0.2s;
 }
+
 .loader > div:nth-child(3) {
   animation-delay: 0.4s;
 }
+
 @keyframes loader {
   to {
     transform: translate(0, -20px);
