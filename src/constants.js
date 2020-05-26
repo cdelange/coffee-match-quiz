@@ -75,7 +75,7 @@ export const QUESTIONS = [
             title: "Do you add anything else to your coffee?",
             answers: {
                         'Sugar or Honey': ['A.M. Rescue', 'Pick-Me-Up', 'Kickstart', 'Life Saver',  'Good Vibes', 'Stimulate', 'Spark', 'Connection', 'Rise and Shine'],
-                        'Sugar Substitute (Stevia, Splenda, etc.)': ['A.M. Rescue', 'Pick-Me-Up', 'Kickstart', 'Life Saver', 'Good Vibes', 'Stimulate', 'Spark', 'Connection', 'Rise and Shine'],
+                        'Sugar Substitute': ['A.M. Rescue', 'Pick-Me-Up', 'Kickstart', 'Life Saver', 'Good Vibes', 'Stimulate', 'Spark', 'Connection', 'Rise and Shine'],
                         'Spices': ['A.M. Rescue', 'Pick-Me-Up', 'Kickstart', 'Life Saver', 'Good Vibes', 'Stimulate', 'Spark', 'Connection', 'Rise and Shine'],
                         'Butter': ['A.M. Rescue', 'Pick-Me-Up', 'Kickstart', 'Life Saver', 'Good Vibes', 'Stimulate', 'Spark', 'Connection', 'Rise and Shine'],
                         // 'Honey': ['A.M. Rescue', 'Pick-Me-Up', 'Kickstart', 'Life Saver', 'Take Me Home', 'Good Vibes', 'Stimulate', 'Spark', 'Connection', 'Rise and Shine'],

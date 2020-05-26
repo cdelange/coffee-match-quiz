@@ -11,8 +11,7 @@ function AnswerList(props) {
     const x = Object.keys(props.questions[id].answers).map((answer) => (
                         <Answer answer = {answer} submitAnswer={props.submitAnswer} isMulti={ props.questions[id].isMulti }  />
                         ));
-    // let coffees = questions[this.state.count].answers[customerAnswers[i]] //grabs the array of coffees mapped to an answer choice // is  count + 1 because count was already incremented for the next questions
-    let coffees = props.questions[id].answers['Light']
+
     return (
         <div >{x}</div>
         )
