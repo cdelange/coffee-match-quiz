@@ -28,8 +28,8 @@ function Answer(props) {
 
 
     return (
-        <div className=' col-xs-6' >
-           <button id={ props.answer } className='btn-block answer-button' onClick={ handleClick.bind(this, props.answer) }> { props.answer } </button>
+        <div className='col-md-6 col-xs-12' >
+        <button id={ props.answer } className='btn-block answer-button' onClick={ handleClick.bind(this, props.answer) }> { props.answer } </button>
 
         </div>
     );

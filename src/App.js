@@ -8,19 +8,21 @@ import './App.css';
 const questions = myConstants.QUESTIONS;
 
 class App extends React.Component {
-  state = {
-    count: 0,
-    customerAnswers: [],
-    currentAnswers: [],
-    quizCompleted: false,
-    multiCompleted: false,
-    loadingResult: true,
-    winner: ""
-  };
-
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0,
+      customerAnswers: [],
+      currentAnswers: [],
+      quizCompleted: false,
+      multiCompleted: false,
+      loadingResult: true,
+      winner: ""
+    };
+  }
 
 // calls getResults if last question, increments counter to change to next question and calles resetForNextQuestion if not
-  nextQuestion = () => {
+nextQuestion = () => {
     if (this.state.count === questions.length - 1){
       this.getResults();
     } else{

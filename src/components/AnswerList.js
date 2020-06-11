@@ -7,21 +7,21 @@ import PropTypes from 'prop-types';
 
 function AnswerList(props) {
 
-    const id = props.count;
-    const x = Object.keys(props.questions[id].answers).map((answer) => (
-                        <Answer answer = {answer} submitAnswer={props.submitAnswer} isMulti={ props.questions[id].isMulti }  />
-                        ));
+  const id = props.count;
+  const x = Object.keys(props.questions[id].answers).map((answer) => (
+    <Answer key={answer} answer = {answer} submitAnswer={props.submitAnswer} isMulti={ props.questions[id].isMulti }  />
+    ));
 
-    return (
-        <div >{x}</div>
-        )
+  return (
+    <div >{x}</div>
+    )
 
 }
 
 
 //prop types  Still need to understand if i actually need it in this case and what they really do
 AnswerList.propTypes = {
-    questions: PropTypes.array.isRequired
+  questions: PropTypes.array.isRequired
 }
 
 export default AnswerList;
