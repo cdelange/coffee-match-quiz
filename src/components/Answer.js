@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
+import img from '../assets/icon-espresso@2x.png';
 
 function Answer(props) {
 
@@ -29,8 +30,10 @@ function Answer(props) {
 
     return (
         <div className='col-md-6 col-xs-12' >
-        <button id={ props.answer } className='btn-block answer-button' onClick={ handleClick.bind(this, props.answer) }> { props.answer } </button>
-
+            <button id={ props.answer } className='btn-block answer-button' onClick={ handleClick.bind(this, props.answer) }>
+                <img align='left' src={img} height='40' width='40'/>
+                { props.answer }
+            </button>
         </div>
     );
 }
