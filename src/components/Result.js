@@ -22,7 +22,7 @@ function Result(props) {
             </div>
             <div className='col-xs-12 col-md-6'>
                 <div className='img-container'>
-                    <img className='img-responsive winner-img fadeIn' src="https://cdn.shopify.com/s/files/1/0939/8326/products/GG_Peru_800x.png?v=1588015971" alt="Rise and Shine" />
+                    <img className='img-responsive winner-img fadeIn' src="https://cdn.shopify.com/s/files/1/0939/8326/products/Fresh_Perspective-pichi_800x.png?v=1583808374" alt="Rise and Shine" />
                 </div>
             </div>
             <div className='col-xs-12 col-md-6 coffee-text'>
