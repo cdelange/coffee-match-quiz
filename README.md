@@ -1,3 +1,5 @@
+This is a proof of concept React Coffee Quiz that will soon be a full stack embedded app on the Shopify store. The answer key is stored as JSON in a local file here, but the eventual app will be have React make API requests to recieve the properly matched coffee.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
